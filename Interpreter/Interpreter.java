@@ -1,9 +1,9 @@
-package prog2b;
+package Interpreter;
 
 import java.io.*;
 import java.util.*;
 
-public class CPU {
+public class Interpreter {
     // Memory offsets to specific segments
     public static final int DATA_SEGMENT_ADDRESS = 0x10010000;
     public static final int TEXT_SEGMENT_ADDRESS = 0x00400000;
@@ -25,7 +25,7 @@ public class CPU {
     public static void main(String[] args) {
         // Make sure the correct number of arguments was given
         if(args.length != 2) {
-            System.out.println("Error: Usage: CPU <TextFile> <DataFile>");
+            System.out.println("Error: Usage: Interpreter <TextFile> <DataFile>");
             System.exit(1);
         }
 
